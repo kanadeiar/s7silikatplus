@@ -1,0 +1,41 @@
+﻿<Window x:Class="S7silikatplus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:S7silikatplus"
+        mc:Ignorable="d"
+        Title="Утилита работы с параметрами ПЛК цеха ГСБ" Height="600" Width="900" ResizeMode="CanResizeWithGrip">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" HorizontalAlignment="Left" Background="LightGreen" BorderBrush="Black">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Создать"/>
+                <Separator/>
+                <MenuItem Header="Открыть"/>
+                <MenuItem Header="Сохранить"/>
+                <MenuItem Header="Сохранить как ..."/>
+                <Separator/>
+                <MenuItem Header="Выход"/>
+            </MenuItem>            
+        </Menu>
+        <ToolBar DockPanel.Dock="Top" Background="AntiqueWhite">
+            <Border VerticalAlignment="Center">
+                <WrapPanel>
+                    <Button Content="Создать" Height="30"/>
+                    <Button Content="Открыть"/>
+                </WrapPanel>
+            </Border>
+        </ToolBar>
+
+        <StatusBar DockPanel.Dock="Bottom" Background="AliceBlue">
+            <StatusBarItem Content="Состояние"/>
+            <Separator/>
+            <StatusBarItem Content="Путь к файлу" HorizontalAlignment="Right" Margin="0,0,20,0"/>
+        </StatusBar>
+        
+        <Grid>
+            
+        </Grid>
+
+    </DockPanel>
+</Window>
